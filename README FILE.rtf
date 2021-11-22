@@ -1,0 +1,91 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\froman\fcharset0 TimesNewRomanPS-BoldMT;\f4\fswiss\fcharset0 Helvetica-Oblique;\f5\fmodern\fcharset0 CourierNewPSMT;
+\f6\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 READ ME FILE\
+\
+type into console the following commands:\
+\
+g++ Proj_1_Morgan_Fisher.cpp -o scanner\
+\
+./scanner input.txt\
+\
+
+\f1\b\fs28 	1. Introduction\
+
+\f0\b0\fs24 \
+This project has a scan function in C++ 
+\f2 that scans from the current pointer of an input/text file and checks if the tokens are all valid or will display an error if there is one or more invalid tokens.\
+\
+
+\f3\b\fs28 	2. Data Structure Specification 
+\f2\b0\fs24 \
+\
+There is an array that is used as a data structure, 
+\f0 one dimensional with n elements. The textfile will be read and checked for validated tokens, as tokens will continue to be validated it will print the tokens assuming all values of the textfile. The first dimension is indexed from 1 to 18 (the number of states)and the second dimension is indexed from 1 to 14 with 1 representing white spaces (space,tab,newline), 2 representing the character/,\'b7,\'b71\'b74representinganyletter. For any integer i and j, 
+\f4\i transitionTable
+\f1\i0\b [i][j]
+\f0\b0  is a record with field names 
+\f5 action
+\f0  and 
+\f5 newState.action
+\f0  can take values of 
+\f5 move
+\f0 , 
+\f5 recognize
+\f0 , stuck. 
+\f5 transitionTable
+\f0 [i][j].action=movemeansthattheautomata should move to next state and transitionTable[i][j].newState is the state to move to. transitionTable[i][j].move = recognize means that i is a final state and the automata cannot move to any other state with the input character corresponding to the number j, i.e.,we recognize a token! transitionTable[i][j].move = stuck means that the the automata can not get to any state from state i with a character corresponding to the number j.\
+\
+\pard\pardeftab720\li720\fi-360\ri0\partightenfactor0
+\ls1\ilvl0
+\f1\b\fs28 \cf0 3.	Test Cases\
+\pard\pardeftab720\li720\ri0\partightenfactor0
+\cf0 \
+\pard\pardeftab720\fi720\ri0\partightenfactor0
+
+\f6\b0\fs24 \cf0 Test Case 1: horses apples farm\
+\pard\pardeftab720\li360\ri0\partightenfactor0
+\cf0 		(The test case should be valid since all the identifiers are valid)\
+\pard\pardeftab720\li720\ri0\partightenfactor0
+\cf0 \
+\pard\pardeftab720\fi720\ri0\partightenfactor0
+\cf0 Test Case 2: 100\
+\pard\pardeftab720\li360\ri0\partightenfactor0
+\cf0 		(The test case should be valid since all the constants are valid)\
+\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 	Test Case 3: 432*21+21jkja+op12\
+\pard\pardeftab720\li360\ri0\partightenfactor0
+\cf0 		(The test case should be valid displaying tokens with no errors)\
+\
+\pard\pardeftab720\li720\ri0\partightenfactor0
+\cf0 Test Case4: () \{\} []\
+\pard\pardeftab720\li1080\fi360\ri0\partightenfactor0
+\cf0 (the test case should be since the special character is valid)\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li360\fi360\ri0\partightenfactor0
+\cf0 Test Case 5: +, -, *, /\
+\pard\pardeftab720\li360\ri0\partightenfactor0
+\cf0 		(The test case should be valid since all operators are all valid)\
+\pard\pardeftab720\li360\fi360\ri0\partightenfactor0
+\cf0 \
+Test Case 6: \'93this is a string /n\'94\
+\pard\pardeftab720\li360\ri0\partightenfactor0
+\cf0 		(the test case should be valid since the string is valid)\
+\pard\pardeftab720\li360\fi360\ri0\partightenfactor0
+\cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+}
