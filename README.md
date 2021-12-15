@@ -1,10 +1,17 @@
 - 👋 Hi, I’m @Mnfisher93
 - 👀 I’m interested in ...
-  Software Engineering
-  Software Security
-  Front End/Back End Development
+  Software Engineering --
+  Software Security --
+  Front End/Back End Development -- 
+  Cloud Computing --
+  
   
 - 🌱 I’m currently learning ...
+     C++
+     Java
+     SQL
+     
+     
      
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
