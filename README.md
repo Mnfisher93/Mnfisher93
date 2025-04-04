@@ -9,8 +9,8 @@
   
 - 🌱 I’m currently learning ...
      C++
-     NodeJS
      Java
+     Javascript 
      SQL
      
      
