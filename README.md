@@ -8,10 +8,7 @@
   
   
 - 🌱 I’m currently learning ...
-     C++
-     Java
-     Javascript 
-     SQL
+     Leveraging Python with Grok APIs
      
      
      
