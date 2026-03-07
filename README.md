@@ -8,10 +8,9 @@
   
   
 - 🌱 I’m currently learning ...
-     Leveraging Python with Grok APIs
+     Building data science piplelines with python and AI multi-agent capability
      
-     
-     
+    
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
     mnfisher17@gmail.com
